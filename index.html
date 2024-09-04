@@ -26,7 +26,7 @@
         header {
             background-color: #39cccc;
             color: white;
-            padding: 40px 20px;
+            padding: 20px;
             text-align: center;
             position: sticky;
             top: 0;
@@ -35,14 +35,14 @@
         }
 
         header h1 {
-            font-size: 3.5rem;
-            margin-bottom: 10px;
+            font-size: 2.5rem;
+            margin-bottom: 5px;
             font-family: 'Lora', serif;
             letter-spacing: 2px;
         }
 
         header p {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             font-weight: 300;
         }
 
@@ -54,10 +54,10 @@
 
         nav a {
             color: white;
-            margin: 0 20px;
+            margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
-            font-size: 1.1rem;
+            font-size: 1rem;
             transition: color 0.3s ease, transform 0.3s ease;
         }
 
@@ -68,7 +68,7 @@
 
         .hero {
             background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://blogassets.leverageedu.com/blog/wp-content/uploads/2020/07/31184810/New-Education-Policy-.jpg') no-repeat center center/cover;
-            height: 100vh;
+            height: 80vh;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -87,11 +87,11 @@
         }
 
         .hero h1 {
-            font-size: 4.5rem;
+            font-size: 3rem;
             margin: 0;
             font-family: 'Lora', serif;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-            letter-spacing: 3px;
+            letter-spacing: 2px;
             animation: slideInFromLeft 1.5s ease-in-out;
         }
 
@@ -107,10 +107,10 @@
         }
 
         .content {
-            padding: 60px 20px;
+            padding: 40px 20px;
             text-align: center;
             background-color: #fff;
-            margin: 40px auto;
+            margin: 20px auto;
             border-radius: 10px;
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
             max-width: 1200px;
@@ -119,7 +119,7 @@
 
         .content h2 {
             color: #34495e;
-            font-size: 2.8rem;
+            font-size: 2.2rem;
             margin-bottom: 20px;
             font-family: 'Lora', serif;
             position: relative;
@@ -131,9 +131,9 @@
         .resources-list {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: center;
             margin: 40px 0;
-            gap: 30px;
+            gap: 20px;
         }
 
         .resource {
@@ -141,7 +141,8 @@
             border: 1px solid #ddd;
             border-radius: 10px;
             padding: 20px;
-            width: 250px;
+            width: calc(100% - 40px);
+            max-width: 300px;
             text-align: left;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -154,8 +155,8 @@
 
         .resource h3 {
             color: #2980b9;
-            font-size: 2rem;
-            margin-bottom: 15px;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
         }
 
         .resource p {
@@ -167,7 +168,7 @@
         .download-button {
             display: inline-block;
             margin-top: 30px;
-            padding: 15px 40px;
+            padding: 15px 30px;
             font-size: 1.2rem;
             color: white;
             background-color: #e74c3c;
@@ -199,8 +200,8 @@
             background-color: #39cccc;
             color: white;
             text-align: center;
-            padding: 30px 20px;
-            margin-top: 50px;
+            padding: 20px;
+            margin-top: 30px;
         }
 
         footer p {
@@ -220,13 +221,34 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 3rem;
+            header h1 {
+                font-size: 2rem;
             }
 
-            .resource {
-                width: 100%;
-                margin-bottom: 20px;
+            .hero {
+                height: 60vh;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .content {
+                padding: 20px;
+                margin: 10px;
+            }
+
+            .content h2 {
+                font-size: 1.8rem;
+            }
+
+            nav a {
+                font-size: 0.9rem;
+                margin: 0 10px;
+            }
+
+            .download-button {
+                padding: 10px 20px;
             }
         }
     </style>
@@ -267,11 +289,11 @@
             </div>
             <div class="resource">
                 <h3>Time Management</h3>
-                <p>by giving us your data and we make for you a table to make it easily to study.</p>
+                <p>Create a study schedule tailored to your needs and goals.</p>
             </div>
             <div class="resource">
                 <h3>Offline Courses</h3>
-                <p>Watch offline courses at anytime you want without internet.</p>
+                <p>Watch offline courses anytime without an internet connection.</p>
             </div>
         </div>
         <a href="#" class="download-button">Explore Resources</a>
